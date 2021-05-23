@@ -9,12 +9,12 @@ __Última actualização__: 23 de Maio de 2021.
 Neste projecto pede-se o desenvolvimento de código concorrente 
 para __(1)__ implementações de conjuntos, __(2)__ um crawler de páginas web, e ainda __(3)__ a análise de bugs em código concorrente usando o Cooperari.
 
-O projecto pode ser realizado __individualmente ou em grupos de 2 alunos no máximo__, devendo ser entregue até __10 de Junho__. A entrega deve ser feita via Teams submetendo:
+O projecto pode ser realizado __individualmente ou em grupos de 2 alunos no máximo__, devendo ser entregue até __11 de Junho__. A entrega deve ser feita via Teams submetendo:
 
 - Um arquivo ZIP com o seu código;
 - Um relatório em formato PDF descrevendo o trabalho que fez.
 
-É fornecido um arquivo ZIP com o código base para a realização do trabalho. O código está pronto para uso em replit.com caso pretenda, mas no que toca às avaliações de desempenho pedidas neste enunciado será conveniente usar um computador seu para resultados mais fiáveis.
+É fornecido um arquivo ZIP com o código base para a realização do trabalho. O código está pronto para uso em replit.com caso pretenda, mas no que toca às avaliações de desempenho pedidas neste enunciado deverá usar um computador seu para resultados mais fiáveis. 
 
 Para compilar o código deverá usar o script `compile.sh`: 
 
