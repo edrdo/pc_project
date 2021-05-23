@@ -14,7 +14,7 @@ O projecto pode ser realizado __individualmente ou em grupos de 2 alunos no máx
 - Um arquivo ZIP com o seu código;
 - Um relatório em formato PDF descrevendo o trabalho que fez.
 
-É fornecido um arquivo ZIP com o código base para a realização do trabalho. O código está pronto para uso em replit.com caso pretenda, mas no que toca às avaliações de desempenho pedidas neste enunciado deverá usar um computador seu para resultados mais fiáveis. 
+É fornecido um [arquivo ZIP com o código base](pc_projecto.zip) para a realização do trabalho. O código está pronto para uso em replit.com caso pretenda, mas no que toca às avaliações de desempenho pedidas neste enunciado deverá usar um computador seu para resultados mais fiáveis. 
 
 Para compilar o código deverá usar o script `compile.sh`: 
 
