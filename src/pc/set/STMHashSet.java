@@ -4,11 +4,6 @@ import scala.concurrent.stm.Ref;
 import scala.concurrent.stm.TArray;
 import scala.concurrent.stm.japi.STM;
 
-/**
- * 
- * Non-concurrent hash set implementation.
- *
- */
 public class STMHashSet<E> implements ISet<E>{
 
   private static class Node<T> {

@@ -78,7 +78,7 @@ Substituindo o uso de `synchronized`,  a implementação deve empregar um object
 
 #### `LHashSet2`
 
-Partindo da implementação anterior, observe que `contains` e `remove` não alteram um conjunto e que podemos empregar antes [`ReentrantReadWriteLock`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html) tal que `add` e `remove` adquirem "locks" de escrita enquanto `contains` e `size` só precisam de "locks" de leitura. Desta forma operações de leitura podem proceder concorrentemente, enquanto as de escrita terão na mesma exclusão mútua no acesso aos dados.
+Partindo da implementação anterior, observe que `contains` e `size` não alteram um conjunto e que podemos empregar antes [`ReentrantReadWriteLock`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html) tal que `add` e `remove` adquirem "locks" de escrita enquanto `contains` e `size` só precisam de "locks" de leitura. Desta forma operações de leitura podem proceder concorrentemente, enquanto as de escrita terão na mesma exclusão mútua no acesso aos dados.
 
 #### `LHashSet3`
 
@@ -108,7 +108,7 @@ O programa em `SetBenchmark.java` permite avaliar o desempenho de uma implementa
 onde `nome_da_classe` é uma classe que implementa o interface `ISet`, por exemplo `pc.set.LHashSet0`:
 
 ```
-$ ./run.sh pc.set.LHashSet0
+$ ./run.sh pc.set.SetBenchmark pc.set.LHashSet0
 1 threads using LHashSet0 ... 9.72 Mops/s
 2 threads using LHashSet0 ... 3.90 Mops/s
 4 threads using LHashSet0 ... 3.23 Mops/s
@@ -137,7 +137,7 @@ O objectivo é programar um crawler que opere de forma concorrente (e correcta!)
 #### Servidor
 
 O código do servidor é dado em `WebServer.java`.
-Pode iniciar o mesmo usando o script `wserver.sh [home] [threads] [port]`, onde:
+Pode iniciar o mesmo usando o script `./run.sh  pc.crawler.WebServer [home] [threads] [port]`, onde:
 
 -  `home` é o directório raíz de páginas a servir `cooperari-0.4/doc/javadoc` (a documentação Javadoc do Cooperari que pode servir de teste);
 -  `threads` é o número de threads empregue internamente na resposta a pedidos, 4 por omissão;
@@ -162,7 +162,7 @@ $ ./run.sh pc.crawler.WebServer
 #### Crawler sequencial
 
 O código do "crawler" sequencial é dado em `SequentialCrawler`.
-Pode iniciar o mesmo usando o script `scrawl.sh [root_url] `, onde:
+Pode iniciar o mesmo usando o script `./run.sh  pc.crawler.SequentialCrawler [root_url] `, onde:
 `root_url` é o URL de partida, `http://localhost:8123` por omissão;
 
 ```

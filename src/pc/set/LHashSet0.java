@@ -2,11 +2,6 @@ package pc.set;
 
 import java.util.LinkedList;
 
-/**
- * 
- * Non-concurrent hash set implementation.
- *
- */
 public class LHashSet0<E> implements ISet<E>{
 
   private static final int NUMBER_OF_BUCKETS = 16; // should not be changed 
