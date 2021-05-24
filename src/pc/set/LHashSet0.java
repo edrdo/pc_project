@@ -21,7 +21,7 @@ public class LHashSet0<E> implements ISet<E>{
   }
 
   @Override
-  public int size() {
+  public synchronized int size() {
     return size;
   }
 
