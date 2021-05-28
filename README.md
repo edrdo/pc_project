@@ -180,7 +180,13 @@ Done: 354 transfers in 1115 ms (317.49 transfers/s)
 
 ### 2.2. Implementação do crawler concorrente
 
-Implemente o crawler concorrente em `ConcurrentCrawler.java` e teste-o com o script `./ccrawl.sh t url` onde `t` é o número de threads a usar e `url` é o ponto de partida (`http://localhost:8123` de novo por omissão).
+Implemente o crawler concorrente em `ConcurrentCrawler.java` e teste-o executando 
+
+```
+./run.sh pc.crawler.ConcurrentCrawler t url
+```
+
+onde `t` é o número de threads a usar e `url` é o ponto de partida (`http://localhost:8123` de novo por omissão).
 
 A parte da lógica de download e extração de links já é dada em `BaseCrawler.java` (`BaseCrawler` é a classe base de `SequentialCrawler` e `ConcurrentCrawler`) através dos métodos `download` e `parseLinks`.
 
@@ -212,7 +218,7 @@ Em `src/pc/cdl` encontra:
 Use 
 
   ```
-./c.java.sh pc.cdl.Test <n>
+./cjava.sh pc.cdl.Test <n>
   ```
 
 para executar o programa de teste onde `<n>` é um valor de 1 a 4, por exemplo:
